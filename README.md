@@ -8,4 +8,4 @@ If you click on the text an editor with the file loaded is opened.
 In the settings can be changed:
 - the file location
 - the editor
-
+- you can specify some custom css
