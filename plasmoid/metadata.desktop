@@ -1,0 +1,20 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=markdown-plasmoid
+Comment=A plasmoid that can show markdown notes enables you to quickly edit that note
+Type=Service
+
+
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Joscha loos
+X-KDE-PluginInfo-Email=joscha.loos@pm.me
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=org.kde.markdown-plasmoid
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=plasma.kde.org
+X-KDE-ServiceTypes=Plasma/Applet
+X-KDE-PluginInfo-Category=Windows and Tasks
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-RemoteLocation=
