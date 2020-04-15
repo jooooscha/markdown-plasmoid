@@ -7,6 +7,7 @@ Item {
 
     property alias cfg_editor: editorText.text
     property alias cfg_filePath: filePath.text
+    property alias cfg_customCSS: customCSS.text
     
     ColumnLayout {
         GridLayout {
@@ -26,7 +27,7 @@ Item {
             Label {
                 Layout.row: 1
                 Layout.column: 0
-                text: "File location"
+                text: "Note file location"
             }
             TextField {
                 id: filePath
@@ -34,6 +35,18 @@ Item {
                 Layout.column: 1
                 Layout.minimumWidth: 300
                 placeholderText: "Full path"
+            }
+            Label {
+                Layout.row: 2
+                Layout.column: 0
+                text: "Put some custom CSS"
+            }
+            TextField {
+                id: customCSS
+                Layout.row: 2
+                Layout.column: 1
+                Layout.minimumWidth: 300
+                placeholderText: "h1 { color: red;}"
             }
         }
     }

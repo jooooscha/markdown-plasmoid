@@ -18,6 +18,7 @@ Item {
 
     property string editor: Plasmoid.configuration.editor
     property string filePath: Plasmoid.configuration.filePath
+    property string customCSS: Plasmoid.configuration.customCSS
 
     PlasmaCore.DataSource {
         id: executable
@@ -40,7 +41,7 @@ Item {
     }
 
     function loadfile() {
-        Func.loadfile(filePath)
+        Func.loadfile(filePath, customCSS)
     }
 
     ScrollView {

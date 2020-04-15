@@ -1,7 +1,6 @@
-function loadfile(path) {
+function loadfile(path, css) {
     if (path == "") {
-        console.log("nothing")
-        viewtext.text = "Please specify a markdown file in the plasmoid settings"
+        setText("<p>Please specify a markdown file in the plasmoid settings</p>", css)
     } else {
         var xhr = new XMLHttpRequest
         xhr.open("GET", path)
@@ -29,13 +28,16 @@ function loadfile(path) {
                 }
                 
                 var md = markdownit()
-                var html = md.render(mdText)
+                setText(md.render(mdText), css)
                 
-                viewtext.text = "<style>td,th {padding: 10px;} table {border-width: 1px;margin: 15px;}</style>" + html
             }
         };
         xhr.send()
     }
+}
+
+function setText(outputText, css) {
+    viewtext.text = "<style>td,th {padding: 10px;} table {border-width: 1px;margin: 15px;}"+ css +"</style>" + outputText
 }
 
 var locked = false

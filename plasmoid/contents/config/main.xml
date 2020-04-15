@@ -13,5 +13,8 @@
     <entry name="filePath" type="String">
         <label>Path to note file</label>
     </entry>
+    <entry name="customCSS" type="String">
+        <label>Custom CSS</label>
+    </entry>
   </group>
 </kcfg>
