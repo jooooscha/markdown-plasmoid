@@ -41,7 +41,7 @@ function setText(outputText, css) {
 }
 
 var locked = false
-function hideText() {    
+function hideText(path, css) {    
     if (locked == false) {
         hideButton.text = "Show Notes"
         reload.visible = false
@@ -53,7 +53,7 @@ function hideText() {
         locked = true
     } else {
         hideButton.text = "Hide Text"
-        loadfile()
+        loadfile(path, css)
         reload.visible = true
         
         scrollview.visible = true

@@ -73,7 +73,7 @@ Item {
         id: lockedSign
         color: "#DDDDDD"
         visible: false
-        text: "Locked"
+        text: "Note hidden"
         anchors.centerIn: parent
         font.pointSize: 50
         font.bold: true
@@ -87,7 +87,7 @@ Item {
         height: 40
         focusPolicy: "NoFocus"
         onClicked: {
-            Func.hideText()
+            Func.hideText(filePath, customCSS)
         }
     }
 

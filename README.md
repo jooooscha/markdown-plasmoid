@@ -5,6 +5,8 @@ The file is loaded and converted to html with [markdown-it](https://github.com/m
 
 If you click on the text an editor with the file loaded is opened.
 
+You can hide the note so nobody behind you can read it :)
+
 In the settings can be changed:
 - the file location
 - the editor
