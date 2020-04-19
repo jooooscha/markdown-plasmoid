@@ -1,7 +1,7 @@
 # Markdown-plasmoid
 
 This is a simple plasmoid that loads an markdown file and displays it.
-The file is loaded and converted to html with [markdown-it](https://github.com/markdown-it/markdown-it). This way you can inject your own css before displaying the file.
+The file is loaded and converted to html with [markdown-it](https://github.com/markdown-it/markdown-it).
 
 If you click on the text an editor with the file loaded is opened.
 
