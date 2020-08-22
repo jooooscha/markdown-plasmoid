@@ -11,5 +11,3 @@ In the settings can be changed:
 - the file location
 - the editor
 - you can specify some custom css
----
-• Download: https://store.kde.org/p/1376340/
